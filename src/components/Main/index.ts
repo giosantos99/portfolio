@@ -1,0 +1,7 @@
+export { default as ButtonContatos } from './ButtonContatos.vue'
+export { default as Contato } from './Contato.vue'
+export { default as Estudos } from './Estudos.vue'
+export { default as Experiencias } from './Experiencias.vue'
+export { default as Inicio } from './Inicio.vue'
+export { default as Projetos } from './Projetos.vue'
+export { default as SobreMim } from './SobreMim.vue'

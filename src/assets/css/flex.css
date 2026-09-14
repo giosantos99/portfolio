@@ -1,0 +1,106 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gutter-x-none {
+  gap: 0
+}
+
+.gutter-x-xs {
+  display: flex;
+  flex-direction: row;
+  gap: 0 4px;
+}
+
+.gutter-x-sm {
+  display: flex;
+  flex-direction: row;
+  gap: 0 8px;
+}
+
+.gutter-x-md {
+  display: flex;
+  flex-direction: row;
+  gap: 0 16px;
+}
+
+.gutter-x-lg {
+  display: flex;
+  flex-direction: row;
+  gap: 0 24px;
+}
+
+.gutter-x-xl {
+  display: flex;
+  flex-direction: row;
+  gap: 0 48px;
+}
+
+.gutter-y-none {
+  gap: 0
+}
+
+.gutter-y-xs {
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+}
+
+.gutter-y-sm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.gutter-y-md {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+}
+
+.gutter-y-lg {
+  display: flex;
+  flex-direction: column;
+  gap: 24px 0;
+}
+
+.gutter-y-xl {
+  display: flex;
+  flex-direction: column;
+  gap: 48px 0;
+}

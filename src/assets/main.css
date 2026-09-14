@@ -1,0 +1,21 @@
+@import './css/base.css';
+@import './css/colors.css';
+@import './css/flex.css';
+@import './css/fonts.css';
+@import './css/padding-margin.css';
+@import './css/typography.css';
+
+
+#app {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}

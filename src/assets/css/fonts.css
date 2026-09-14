@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Agustina';
+  src: url('@/assets/fonts/Agustina.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('@/assets/fonts/Montserrat-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
