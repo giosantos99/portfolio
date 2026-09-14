@@ -1,8 +1,8 @@
 <template>
-  <footer class="py-md">
+  <footer class="py-md" id="footer">
     <Logo class="flex flex-center pb-md" />
 
-    <div class="flex flex-center flex-col items-center gap-sm">
+    <div :class="!screen.lt.md ? 'flex flex-center' : ''">
 
       <p class="text-center" aria-label="Feito com amor por Giovanna Santos">
         Feito com
@@ -23,6 +23,7 @@
 
 <script setup lang="ts">
 
+import { useScreen } from '@/utils/useScreen'
 import { computed } from 'vue'
 
 
@@ -30,6 +31,7 @@ defineOptions({
   name: 'Footer'
 })
 
+const screen = useScreen()
 const ano = computed(() => new Date().getFullYear())
 
 </script>

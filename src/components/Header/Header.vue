@@ -62,7 +62,6 @@ defineOptions({
 })
 
 const screen = useScreen()
-// Consome a variável reativa global e a função de navegação
 const { menuAtivo, navigateToSection } = useNavigation()
 
 const menu = [
@@ -98,7 +97,6 @@ interface ItemMenu {
 }
 
 const onNavPage = (link: ItemMenu) => {
-  // Executa o scroll e atualiza a tab ativa instantaneamente
   navigateToSection(link.id)
 }
 
@@ -111,10 +109,7 @@ const setupIntersectionObserver = () => {
 
   observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      // Atualiza a variável global do composable durante a rolagem manual
-      if (entry.isIntersecting) {
-        menuAtivo.value = entry.target.id
-      }
+      if (entry.isIntersecting) menuAtivo.value = entry.target.id
     })
   }, options)
 
@@ -199,7 +194,7 @@ onUnmounted(() => {
         border-radius: 6px
 
 .theme-toggle
-  --size: 2rem
+  --size: 1.5rem
 
   width: var(--size)
   height: var(--size)

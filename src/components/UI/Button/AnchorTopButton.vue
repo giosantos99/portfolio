@@ -1,42 +1,58 @@
 <template>
-  <div class="container-anchor-button">
+<div class="container-anchor-button">
+  <Transition name="fade">
     <IconButton
       v-show="isVisible"
       class="button-go-top bg-secondary text-light"
       icon="arrow-up"
       size="lg"
+      :style="{ bottom: `${bottomOffset}px` }"
       @click="scrollToTop"
     />
-  </div>
+  </Transition>
+</div>
 </template>
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
 
-import IconButton from './IconButton.vue'
 import { useNavigation } from '@/composables/useNavigation.ts'
+
+import IconButton from './IconButton.vue'
+
+defineOptions({
+  name: 'AnchorTopButton'
+})
 
 const { scrollToTop } = useNavigation()
 
-defineOptions({
-  name: 'AnchorTopButton',
-})
-
 const isVisible = ref(false)
+const bottomOffset = ref(20)
+
+const BASE_BOTTOM = 20
 
 const handleScroll = () => {
-  isVisible.value = window.scrollY > 100
-}
+  const scrollY = window.scrollY
+  isVisible.value = scrollY > 100
 
-const goTop = () => {
-  window.scrollTo({
-    behavior: 'smooth',
-    top: 0,
-  })
+  const footer = document.getElementById('footer')
+
+  if (footer) {
+    const footerRect = footer.getBoundingClientRect()
+    const windowHeight = window.innerHeight
+
+    if (footerRect.top < windowHeight) {
+      const overlap = windowHeight - footerRect.top
+      bottomOffset.value = BASE_BOTTOM + overlap
+    } else {
+      bottomOffset.value = BASE_BOTTOM
+    }
+  }
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  handleScroll()
 })
 
 onUnmounted(() => {
@@ -46,11 +62,17 @@ onUnmounted(() => {
 
 <style lang="sass" scoped>
 .container-anchor-button
-  padding-top: 60px
-
   .button-go-top
     position: fixed
-    bottom: 20px
     right: 20px
     z-index: 100
+    transition: bottom 0.1s ease-out, opacity 0.3s ease
+
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity 0.3s ease
+
+.fade-enter-from,
+.fade-leave-to
+  opacity: 0
 </style>

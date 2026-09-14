@@ -29,9 +29,10 @@
 
       <ButtonContatos />
 
-      <div :class="[
-          screen.lt.md ? 'flex flex-center' : '',
-          'row gutter-x-md pt-xl'
+      <div
+        :class="[
+          !screen.lt.md ? 'row gutter-x-md' : 'gutter-y-md',
+          'pt-xl'
         ]"
       >
         <QBtn
