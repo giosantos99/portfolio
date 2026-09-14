@@ -110,5 +110,5 @@ Acesse a aplicação no seu navegador através do endereço exibido no terminal 
 
 Gostou do projeto ou quer trocar uma ideia? Entre em contato comigo:
 
-* LinkedIn: https://www.linkedin.com/in/giovanna-santos-90a6381a4/)
+* LinkedIn: https://www.linkedin.com/in/giovanna-santos-90a6381a4/
 * E-mail: giovanna.santos.souza99@gmail.com
