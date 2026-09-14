@@ -8,6 +8,7 @@
   <b>Aplicação web responsiva desenvolvida para apresentar minha trajetória, habilidades e projetos como Desenvolvedora Front-end.</b>
 </p>
 
+
 <p align="center">
   <a href="#-tecnologias-utilizadas">Tecnologias</a> •
   <a href="#-funcionalidades">Funcionalidades</a> •
@@ -21,6 +22,14 @@
 ## 🚀 Sobre o Projeto
 
 Este projeto é meu portfólio pessoal, construído do zero focado em performance, acessibilidade e boa experiência do usuário (UX). Conta com um design moderno em **Dark/Light Mode**, animações em Canvas, navegação fluida com scroll suave e envio de mensagens via integração direta com serviço de e-mail.
+
+---
+
+## 🌐 Demonstração Online
+
+O site está publicado e pode ser acessado em produção no seguinte endereço:
+
+👉 **[https://giovanna-santos.vercel.app/](https://giovanna-santos.vercel.app/)**
 
 ---
 
