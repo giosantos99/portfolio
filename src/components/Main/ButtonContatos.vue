@@ -32,7 +32,7 @@ const contatos = [
   },
   {
     icon: 'fab fa-linkedin',
-    action: 'https://www.linkedin.com/in/giovanna-santos-90a6381a4/',
+    action: 'https://www.linkedin.com/in/giovanna-santos-souza/',
     color: '#0e76a8'
   },
   {
