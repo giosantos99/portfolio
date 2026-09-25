@@ -124,7 +124,7 @@ const goContato = () => navigateToSection('contato')
 
 const baixarCurriculo = async () => {
   try {
-    const response = await fetch('pdf/Giovanna Santos - Frontend.pdf')
+    const response = await fetch('pdf/Giovanna Santos de Souza - Desenvolvedora Front-end')
 
     if (!response.ok) throw new Error(`Erro na requisição: ${response.status} ${response.statusText}`)
 
