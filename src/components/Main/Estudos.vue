@@ -142,7 +142,7 @@ const isImagem = computed(() => {
   img
     width: 100%
     height: auto
-    max-width: 100%
+    max-width: 500px
 
   &-container
     display: flex

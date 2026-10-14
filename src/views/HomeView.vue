@@ -1,18 +1,12 @@
 <template>
-<div>
+<q-page>
   <Inicio />
-
   <SobreMim />
-
   <Experiencias />
-
   <Projetos />
-
   <Estudos />
-
   <Contato />
-
-</div>
+</q-page>
 </template>
 
 <script setup lang="ts">
@@ -29,10 +23,8 @@ import {
 defineOptions({
   name: 'HomeView'
 })
-
 </script>
 
 <style lang="sass" scoped>
 
 </style>
-

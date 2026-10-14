@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanna Santos | Portfólio</title>
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme')
+        theme === 'dark' && document.documentElement.classList.add('dark')
+      })()
+    </script>
   </head>
   <body>
     <div id="app"></div>
