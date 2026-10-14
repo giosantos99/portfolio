@@ -110,6 +110,7 @@ const formacao = [
 ]
 
 const cursos = [
+  { label: 'React.js', icon: 'fab fa-react', color: 'rgb(97, 218, 251)' },
   { label: 'Vue.js', icon: 'fab fa-vuejs', color: 'rgb(99, 230, 190)' },
   { label: 'Quasar Framework', icon: 'quasar.svg', color: '' },
   { label: 'Bootstrap', icon: 'fab fa-bootstrap', color: 'rgb(177, 151, 252)' },
